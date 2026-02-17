@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;800&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration: none;
+    border:none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-family:var(--font-family);
+    word-wrap: break-word;
+}
+
+/* Heading 2 & Heading 1 Spacing */
+h2, h1 {
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+html, body {
+    width:100%;
+    overflow-x:hidden
+}
+
+:root {
+    --primary-color: #fca311;
+    --text-color-light: #fff;
+    --navbar-bg: #14213d;
+    --text-color-dark: #000;
+    --dark-semitransparent: rgba(0,0,0,0.4);
+    --grayish-color:#E5E5E5;
+    --font-family: 'Inter', sans-serif;
+}
+
+/* Contact Text Section Start */
+.contact-text-section {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20201022/pngtree-abstract-technology-background-line-high-tech-electricity-image_430309.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+/* Contact Text Section End */
+
+/* Contact Form Start */
+.first_name, .last_name, .contact_number, .zip_code, .email, .address {
+    height:50px !important
+}
+
+.first_name, .last_name, .contact_number, .zip_code, .email, .address, .message-text-area {
+    border:1px solid var(--text-color-dark) !important
+}
+
+textarea.message-text-area {
+    height:150px
+}
+
+.submit_form {
+    background:var(--navbar-bg);
+    border-radius:10px;
+    border: 2px solid var(--primary-color);
+}
+
+.submit_form:hover {
+    background: var(--text-color-dark);
+    border: 2px solid var(--primary-color);
+}
+/* Contact Form End */
+
+/* Contact Section Start */
+.contact {
+    background: var(--navbar-bg);
+}
+
+.contact p {
+    color:var(--primary-color)
+}
+
+.social-icons a i:hover {
+    color:var(--primary-color)
+}
+/* Contact Section End */

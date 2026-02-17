@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;800&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    list-style:none;
+    text-decoration: none;
+    border:none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-family:var(--font-family);
+    word-wrap: break-word;
+}
+
+html, body {
+    width:100%;
+    overflow-x:hidden
+}
+
+:root {
+    --primary-color: #fca311;
+    --navbar-bg: #14213d;
+    --text-color-light: #fff;
+    --text-color-dark: #000;
+    --font-family: 'Inter', sans-serif;
+}
+
+header {
+    background: var(--navbar-bg);
+}
+
+@media only screen and (max-width:768px) {
+    div.account_info {
+        justify-content: center !important;
+    }
+}
+
+.navbar {
+    background: var(--text-color-dark);
+}
+
+.search_btn {
+    background:var(--text-color-dark) !important;
+    border: 2px solid var(--primary-color) !important;
+    border-radius: 0px 15px 15px 0px !important;
+}
+
+.search_btn:hover {
+    background:var(--navbar-bg) !important;
+    border: 2px solid var(--primary-color);
+}
+
+.search_btn i:hover {
+    color: var(--primary-color);
+}
+
+.search_input {
+    border: 2px solid var(--primary-color) !important;
+    border-radius: 15px 0px 0px 15px !important;
+}
+
+.navbar-toggler {
+    border:none;
+}
+
+.navbar-toggler-icon{
+    color:var(--text-color-light)
+}
+
+.search-suggestions {
+    z-index:10;
+    border: 2px solid var(--navbar-bg);
+    border-radius: 10px;
+    max-width:800px
+}
+.result_list:hover {
+    color:var(--text-color-light) !important
+}
+
+.dropdown-menu {
+    border-radius: 0px;
+    background: var(--primary-color);
+}
+
+.login_link, .logout_link {
+    cursor:pointer;
+}
+
+.login_link:hover, .logout_link:hover {
+    background: var(--navbar-bg);
+    color:var(--primary-color)
+}
+
+.navbar_link:hover, .nav-link:hover {
+    color: var(--primary-color)!important;
+    cursor: pointer;
+}
+
+.not-login, .logged-in {
+    line-height: 20px !important;
+    background: var(--navbar-bg);
+    border-bottom: 0.5px solid var(--primary-color);
+}
